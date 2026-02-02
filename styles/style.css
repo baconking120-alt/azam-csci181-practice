@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&family=Bebas+Neue&family=Work+Sans:wght@400;500;600&display=swap");
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #2e09c0dd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: #2eb0c6dd;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Work sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #66e2f8dd;
+  font-family: Poppins, "Work sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.36875rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.77688rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.33313rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: #6d8fe7dd;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background-color: #ffffffdd;
+  color: #6d8fe7dd;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 500;
+}
+
+.display-text {
+  font-family: "Bebas Neue", "Work sans", Helvetica, Arial, sans-serif;
+  font-size: 3.1575rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+
+section.page-section {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ffffffdd;
+  margin: 0 auto 1rem auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+#hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffffdd;
+  padding: 2rem;
+}
+
+.hero-button {
+  padding: 0.75rem 1rem;
+  background-color: #ffffffdd;
+  color: #6d8fe7dd;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.hero-button:hover {
+  background-color: #e0e0e0dd;
+}
