@@ -4,39 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Home - Adam Azam portfolio</title>
+    <title>Home - Adam Azam Portfolio</title>
   </head>
 
   <body>
+    <!-- Header -->
     <header id="page-header">
-      <img
-        src="images/logo.png"
-        alt="Personal logo"
-        width="48px"
-        height="48px"
-      />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner">
+        <img src="images/logo.png" alt="Personal logo" width="48" height="48" />
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
+      <!-- Hero -->
       <section id="hero">
         <h1 class="hero-tagline">CSCI 181 Practice Website</h1>
         <p class="hero-text">Resume & portfolio practice site</p>
         <a href="resume.html" class="hero-button">View My Work</a>
       </section>
-      <h1>Home</h1>
+
+      <!-- Projects -->
+      <section id="projects" class="page-section">
+        <h2>Projects</h2>
+
+        <ul class="projects-list">
+          <li class="project-card">
+            <article>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A personal website to showcase my resume, coursework, and future
+                projects. Built using HTML and CSS.
+              </p>
+              <a href="#" class="project-link">View Project</a>
+            </article>
+          </li>
+
+          <li class="project-card">
+            <article>
+              <h3>Study Routine Planner</h3>
+              <p>
+                A study planning system designed to organize daily study
+                sessions, track productivity, and build consistent learning
+                habits.
+              </p>
+              <a href="#" class="project-link">View Project</a>
+            </article>
+          </li>
+
+          <li class="project-card">
+            <article>
+              <h3>Time Management System</h3>
+              <p>
+                A personal time management tool focused on balancing school,
+                work, hobbies, and personal life through structured scheduling.
+              </p>
+              <a href="#" class="project-link">View Project</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
       <section id="contact" class="page-section">
-        <h2>Contact me</h2>
+        <h2>Contact Me</h2>
         <p>
-          Please feel free to reach out and contact me and ill get to you within
-          the next few business days
+          Please feel free to reach out — I’ll get back to you within the next
+          few business days.
         </p>
+
         <form action="#" method="post" class="contact-form">
-          <!-- Name -->
           <div class="form-group">
             <label for="name">Your Name</label>
             <input
@@ -47,7 +90,7 @@
               placeholder="Enter your name"
             />
           </div>
-          <!--email-->
+
           <div class="form-group">
             <label for="email">Your Email</label>
             <input
@@ -58,9 +101,9 @@
               placeholder="Enter your email"
             />
           </div>
-          <!--message-->
+
           <div class="form-group">
-            <label for="message">Your message to Adam</label>
+            <label for="message">Your Message</label>
             <textarea
               id="message"
               name="message"
@@ -69,8 +112,8 @@
               placeholder="Type your message here"
             ></textarea>
           </div>
-          <!--send it-->
-          <button type="submit" class="hero-button">send message</button>
+
+          <button type="submit" class="hero-button">Send Message</button>
         </form>
       </section>
     </main>

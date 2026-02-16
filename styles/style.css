@@ -25,6 +25,39 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+#page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #12003a;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  padding-top: 90px;
+}
+
+#page-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+}
+
+#page-header a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6d8fe7dd;
+}
+
+#page-header a:hover {
+  text-decoration: underline;
+}
+
 input,
 button,
 textarea,
@@ -138,4 +171,77 @@ section.page-section {
 
 .hero-button:hover {
   background-color: #e0e0e0dd;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #12003a;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffffff22;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #66e2f8dd;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff55;
+  background-color: #12003a;
+  color: #ffffffdd;
 }
