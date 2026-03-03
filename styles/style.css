@@ -245,3 +245,55 @@ section.page-section {
   background-color: #12003a;
   color: #ffffffdd;
 }
+
+.bento-grid-container {
+  background-color: #000; /* Gothic black background */
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  max-width: 1200px;
+}
+
+.bento-tile {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #1a1a1a; /* dark gothic tile color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0dede;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.bento-center {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #111;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bento-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
