@@ -10,22 +10,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Header -->
     <header id="page-header">
       <div class="header-inner">
         <img src="images/logo.png" alt="Personal logo" width="48" height="48" />
 
-        <nav aria-label="Main navigation">
+        <!-- Add aria-label -->
+        <nav aria-label="Primary navigation">
           <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <!-- Hero -->
       <section id="hero">
         <h1 class="hero-tagline">CSCI 181 Practice Website</h1>
@@ -74,7 +78,7 @@
         </ul>
       </section>
 
-      <!-- ✅ Testimonials -->
+      <!-- Testimonials -->
       <section id="testimonials" class="page-section">
         <h2>Testimonials</h2>
         <ul
@@ -115,6 +119,7 @@
               </figcaption>
             </figure>
           </li>
+
           <li>
             <figure
               class="relative h-full rounded-xl border border-white/20 bg-[#12003a] p-6 shadow-sm"
@@ -149,6 +154,7 @@
               </figcaption>
             </figure>
           </li>
+
           <li>
             <figure
               class="relative h-full rounded-xl border border-white/20 bg-[#12003a] p-6 shadow-sm"
