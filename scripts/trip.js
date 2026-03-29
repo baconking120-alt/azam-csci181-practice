@@ -73,6 +73,7 @@ while (miles_traveled < total_distance) {
 }
 
 // Final Road Trip Summary
+
 display("\n--- Road Trip Summary ---");
 display(`Driver: ${driver_name}`);
 display(`Total Distance: ${total_distance} miles`);
