@@ -14,17 +14,20 @@
   <body>
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
     <header id="page-header">
       <div class="header-inner">
         <img src="images/logo.png" alt="Personal logo" width="48" height="48" />
 
-        <!-- Add aria-label -->
         <nav aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
           </ul>
+
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" type="button">Switch to Dark Mode</button>
         </nav>
       </div>
     </header>
@@ -238,6 +241,9 @@
         </form>
       </section>
     </main>
+
+    <!-- Scripts -->
     <script src="scripts/trip.js"></script>
+    <script src="scripts/theme.js"></script>
   </body>
 </html>
