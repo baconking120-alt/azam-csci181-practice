@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missoula Weather</title>
+
+    <!-- Tailwind optional, your own CSS can also be used -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Weather script -->
+    <script src="scripts/weather.js" defer></script>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <main
+      id="main-content"
+      class="flex min-h-screen flex-col justify-center items-center text-center p-4"
+    >
+      <!-- Page Title -->
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Missoula Weather</h1>
+
+      <!-- Weather Output Container -->
+      <div id="weather-output" aria-live="polite" class="text-lg md:text-xl">
+        Loading...
+      </div>
+    </main>
+  </body>
+</html>
